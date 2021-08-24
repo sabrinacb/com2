@@ -1,0 +1,60 @@
+/* 1em == medida base
+   2em == doble de la medida base 
+   16px por defecto
+   16px * 2em == 32px;
+
+*/
+
+* { box-sizing: border-box; }
+/* content-box ==  width 100px + 10px => 120px*/
+/* border-box == width 100px + 10px => 100px*/
+body { 
+font-size: 150%; /* 120 de 16px*/
+
+}
+
+h1 { font-size: 3rem;}
+/* root*/
+
+/* 3 * 10px => 30px*/
+
+h2 { font-size: 2em; }
+
+header, main { width: 100%; 
+      background-color: pink;
+padding: 1rem ;
+
+}
+
+header { 
+    background-color: lightblue;
+    font-size: 2em;
+    padding: 2rem;
+}
+
+/*si trabajo con em, en el contenedor header, lo que pasa con el h1 es lo siguiente ( este ejemplo es acorde a cuando el body tiene 10px)
+
+2 * 10px  => 20px => h1 tiene 3em => 20px * 3 => 60px*/
+
+*/
+
+
+
+@media (max-width: 925px){ 
+
+    body { font-size: 80%;}
+    
+                
+                }
+
+
+
+
+@media (max-width: 768px){ 
+
+body { font-size: 50%;}
+
+            
+            }
+
+

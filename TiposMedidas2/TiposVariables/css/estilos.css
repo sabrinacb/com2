@@ -1,0 +1,53 @@
+/*ejemplo con weight de una tipografía variable desde google fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&display=swap');
+
+
+/*ejemplo con weight y strech/width desde google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wdth,wght@75..125,100..900&display=swap');
+
+
+p { 
+
+    font-family: 'Recursive', sans-serif;
+   /* font-weight: 900;*/
+   font-variation-settings: 'wght' 800 ;
+
+
+}
+
+
+p + p { font-family:  'Encode Sans', sans-serif;
+    
+    color: red;
+    font-variation-settings: 'wdth' 100 ,'wght' 500 ;}
+
+
+/*ejemplo con una tipografía variable y @font-face*/
+@font-face {
+    font-family: miFuente;
+    src: url(../fuentes/fuente.ttf);
+    font-weight: 200 900;
+    font-stretch: 50 200;
+}
+
+
+
+h1 { 
+    
+    font-family: miFuente;
+    /*
+    font-weight: 900;
+    font-stretch: 150;
+    */
+    font-variation-settings: 'wdth' 100, 'wght' 600;
+
+
+
+}
+
+
+
+
+
+

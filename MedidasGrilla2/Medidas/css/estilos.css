@@ -1,0 +1,55 @@
+* { box-sizing: border-box;}
+body { font-size: 120%;
+}
+h1, h2, p, body { margin: 0;}
+header {
+    
+    font-size: 2rem;
+
+    padding: 1em;
+    width: 100%;
+    height: 100vh;
+    background-color:coral;
+ 
+
+}
+h1 { font-size: 3rem;}
+
+main { 
+background-color: lightblue;
+height: 100vmin;
+width:100vmin;
+margin: auto;
+
+}
+
+
+header , main { padding: 1em;}
+
+
+@media (max-width: 768px){
+
+body { font-size: 80%;}
+
+}
+
+
+
+/*
+
+vw => viewport width
+
+1vw => 1100px => 11px
+1vh => viewport height => 700px => 7px
+
+
+Tengo una pantalla de 
+1100px de ancho
+700px de alto
+1vmin => 
+1% de 700px == 7px
+
+1vmax de 1100px == 11px
+
+*/
+

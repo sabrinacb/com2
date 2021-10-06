@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {font-family: 'Open Sans', sans-serif;}
+
+
+.container {
+    background-color: red;
+}
+
+.container-fluid {
+    background-color: green;
+}
+
+.container-md {
+    background-color:pink;
+}
+
+.container-lg { background-color: #ff0;}
+
+.container-xxl { background-color:orangered;}
+
+div.bg-dark { background-color: purple !important ;}

@@ -1,0 +1,50 @@
+
+/*img { max-width: 100%; height: auto;}
+esto es lo que hace bootstrap cuando a una imagen le agregamos la clase img-fluid
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap');
+
+body, button { font-family: 'Montserrat', sans-serif;
+color: #333;}
+
+button { border-radius: 5px/5px; }
+
+.btn-success {
+    background-color: #57BDBA;
+    border: none;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #E52F89;
+}
+
+/* esto también hubiese servido
+button:nth-of-type(2) {
+    background-color: #E6E6E6;
+    color: #333; 
+}
+*/
+
+button { font-size: 1.3em;}
+h1 { font-size: 4.5em;}
+h4 {}
+h3 {}
+h2 {}
+.col-xl-5 button:nth-last-child(1) { background-color: #E6E6E6;
+    color: #333;}
+
+ h3 { color: #E92B87;}
+ 
+ h2 { color: #FAA308;}
+
+
+
+ 
+
+
+
+
+

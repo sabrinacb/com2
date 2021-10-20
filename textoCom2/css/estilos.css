@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+
+
+h1 {
+
+font-family: 'Open Sans',
+sans-serif;
+
+font-size: 4em;
+background-image: url(../imagenes/fondo.jpg);
+
+/* se puede poner .gif, gradientes, etc*/
+/*dos propiedades permiten poner la imagen de fondo a través del texto*/
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+
+
+}

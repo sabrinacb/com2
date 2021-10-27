@@ -1,0 +1,30 @@
+.col {
+    background-color: red;
+}
+
+header {
+
+
+    background-image: url(../imagenes/foto-1.jpg), url(../imagenes/foto-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100px 200px;
+    background-position: 50% 20px, 200px 100px;
+}
+
+
+@media (max-width: 768px){
+
+
+
+    .col-md-5 { margin-top: 500px;}
+
+    header {
+
+
+    
+        background-position: 30%, 100px 100px;
+    }
+    
+
+
+}

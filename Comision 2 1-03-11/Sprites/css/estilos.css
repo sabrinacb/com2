@@ -1,0 +1,32 @@
+a {
+    width: 55px;
+    height: 55px;
+    display: block;
+    background-image:url(../imagenes/sprite.png);
+    background-position:0px -77px;
+
+
+}
+
+
+a:hover {
+
+
+    background-position:0px -21px;
+
+
+}
+
+
+a:nth-of-type(2){
+
+    background-position:-55px -77px;
+
+}
+
+
+a:nth-of-type(2):hover{
+
+    background-position:-55px -21px;
+
+}

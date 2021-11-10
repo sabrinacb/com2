@@ -1,0 +1,42 @@
+
+a { display: block;}
+form {
+    width: 800px;
+   
+  
+    box-shadow: 2px 3px 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 2em;
+    margin: 0 auto;
+}
+
+textarea { resize: none;}
+/*no dejamos que el usuario pueda agrandar o minimizar la caja de comentarios multilinea*/
+span { color: red; font-size: 9px;}
+
+label, button{display: block; margin:5px;}
+input, textarea{
+
+    width: 200px;
+    height: 10px;
+    border-radius: 10px;
+ 
+    border: none;
+    /* le quito el borde*/
+    outline: none;
+    /* le saco el borde que viene después del borde, y que aparece cuando le hago foco al elemento*/
+    padding: 1em;
+   /* transition: all 5s;*/
+    background-color: rgb(197, 197, 136);
+ 
+
+}
+/*
+input:focus {
+    width:300px;
+    background-color: black;
+    color: white;
+    box-shadow: 1px 2px 3px;
+}
+
+*/

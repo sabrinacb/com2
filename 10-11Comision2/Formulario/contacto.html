@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+
+    <a href="index.html">Inicio</a>
+    <a href="index.html#contacto">Contacto Embebido en el index</a>
+    <a href="contacto.html">Contacto a otra página</a>
+
+
+
+
+    <h2>Formulario de Contacto</h2>
+    <form method="post" action="php/codigo.php">
+        <a name="contacto"></a>
+        <label for="nombre">Nombre & Apellido</label>
+
+        <input placeholder="Juan Perez" required id="nombre" type="text"> <span>*</span>
+
+        <label for="email"> E-mail </label>
+
+        <input placeholder="info@mimail.com" required id="email" type="email"> <span>*</span>
+
+
+        <label for="edad"> Edad </label>
+
+        <input min="18" max="100" required id="edad" type="number"> <span>*(Máximo 100, mínimo 18)</span>
+
+        <label for="entradas"> Entradas </label>
+
+        <input min="2" max="10" step="2" required id="entradas" type="number"> <span>*(Máximo son 10 entradas, mínimo
+            son 2, y sólo pueden ser pares) </span>
+
+        
+
+        <button>Enviar </button>
+
+    </form>
+</body>
+
+</html>

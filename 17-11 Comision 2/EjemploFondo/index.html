@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+#cuerpo { background-size: cover;
+background-repeat: no-repeat; 
+}
+
+@keyframes animacion {
+
+0% {
+     background-image: url(https://images.unsplash.com/photo-1637100958930-f89e3564d491?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80);   }
+
+
+50% {
+   background-image: url(https://images.unsplash.com/photo-1593642633279-1796119d5482?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=688&q=80);  }
+
+100% {
+   background-image: url(https://images.unsplash.com/photo-1636926587706-6ef4bf952e3b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=706&q=80);  }
+
+}
+
+
+
+
+</style>
+
+
+</head>
+<body id="cuerpo">
+
+<button onmouseover="animacion();" onmouseout="noanimacion();">Animar el fondo</button>
+ 
+
+
+<script>
+
+function animacion(){
+    document.getElementById('cuerpo').style.animation = 'animacion  6s infinite alternate forwards';
+
+
+
+
+
+}
+
+
+function noanimacion(){
+    document.getElementById('cuerpo').style.animation = 'otro';
+
+   
+  
+
+
+}
+
+
+</script>
+</body>
+</html>

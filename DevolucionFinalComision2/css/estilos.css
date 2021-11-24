@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400;900&display=swap');
+
+
+
+@font-face {
+    font-family: miFuente;
+    src: url(../fuentes/fuente-bold.otf);
+    font-weight: 700;
+
+}
+
+@font-face {
+    font-family: miFuente;
+    src: url(../fuentes/fuente-light.otf);
+    font-weight: 400;
+
+}
+
+body {
+    font-family: miFuente;
+}
+
+
+
+h2 {
+    font-weight: 700;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+
+
+h3 {font-family: 'Roboto', sans-serif;
+font-weight:400;}
+
+
+.container { background-color:aqua;}
+.container-fluid { background-color: blueviolet;}
+
+.col-md-4 { border-radius: 10px;}
+
+.col-md-4:first-child { background-color: blue;}
+.col-md-4:nth-child(2) { background-color: purple;}
+.col-md-4:nth-child(3) { background-color: yellow;}

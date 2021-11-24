@@ -1,0 +1,9 @@
+.invalid-feedback {
+    background-color: black;
+}
+
+input[type="text"]:focus {
+    background-color: olive !important;
+}
+
+textarea { resize: none;}

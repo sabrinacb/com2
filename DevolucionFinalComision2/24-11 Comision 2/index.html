@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--link bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--link js bootstrap-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!--mis estilos-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Formularios</title>
+
+
+
+</head>
+
+<body>
+
+    <main class="container-fluid">
+        <form class="row p-5 needs-validation" novalidate action="php/codigo.php" method="post">
+            <div class="col-md-6">
+                <label class="form-label" for="nombre">Nombre</label>
+                <input class="form-control" id="nombre" type="text" required name="nombre">
+                <div class="invalid-feedback">
+
+                    Te falta poner el nombre!
+
+                </div>
+                <!--cierre de feedback inválido-->
+                <div class="valid-feedback">
+
+                    Muy bien! Pusiste correctamente la información!
+
+                </div>
+                <!--cierre de feedback válido-->
+            </div>
+            <!--cierre general del campo nombre-->
+
+            <div class="col-md-6">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-control" id="email" type="email" required name="email">
+                <div class="invalid-feedback">
+                    Pusiste mal el e-email
+
+
+                </div>
+
+
+                <div class="valid-feedback">
+                    Muy bien! Pusiste correctamente el e-mail.
+
+
+                </div>
+
+            </div>
+            <!--cierra el campo de e-mail-->
+
+            <div class="col-md-6">
+                <label class="form-label" for="telefono">Teléfono - Formato: +99(99)9999-9999</label>
+                <input class="form-control" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" id="telefono" type="tel"
+                    required name="telefono">
+                <div class="invalid-feedback">
+                    Pusiste mal el teléfono. Fijate el formato a utilizar- Formato: +99(99)9999-9999
+
+
+                </div>
+
+
+
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label" for="conociste">¿Cómo nos conociste?</label>
+
+                <select class="form-select" name="menu" id="conociste">
+                    <option selected disabled>Elegir...</option>
+                    <option value="internet">Internet</option>
+                    <option value="otros">Otros</option>
+                </select>
+
+                <div class="invalid-feedback">
+                    Te olvidate de poner como me conociste
+
+
+                </div>
+
+
+
+            </div>
+
+
+            <div class="col-12">
+                <label class="form-label" for="comentarios">Comentarios</label>
+
+                <textarea required placeholder="Comentarios..." name="comentarios" id="comentarios"
+                    class="form-control"></textarea>
+
+                <div class="invalid-feedback">
+                    Te olvidaste de poner los comentarios.
+
+
+                </div>
+
+                <div class="valid-feedback">
+                    Muy bien completaste todo
+
+
+                </div>
+
+            </div>
+
+            <div class="col-12">
+
+                <div class="form-check">
+
+                    <input required id="casilla" class="form-check-input" type="checkbox">
+
+                    <label class="form-check-label" for="casilla">Acepto terminos y condiciones</label>
+
+                    <div class="invalid-feedback">
+                        Te olvidaste de chequear la casilla de verificación
+
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+            <div class="col-12 mt-2">
+                <button class="btn btn-primary">Enviar </button>
+            </div>
+        </form>
+
+    </main>
+
+    <!--empieza formulario ejemplo con radios
+
+    <form action="codigo.php" method="post">
+        <label class="form-label" for="deportes"> Deportes</label> <br>
+        <label> Natación<input name="deportes" type="checkbox" value="natacion"></label>
+
+        <label> Equitación<input name="deportes" type="checkbox" value="equitacion"></label>
+
+
+        <label> Fútbol<input value="futbol" name="deportes" type="checkbox"></label>
+
+<br>
+        <label for="estado">Estado Civil</label>
+
+        <label for="casado">Casado<input type="radio" name="estado" value="casado"></label>
+
+        <label for="soltero">Soltero<input type="radio" name="estado" value="soltero" ></label>
+
+
+    </form>
+
+-->
+
+
+
+
+
+    <script>
+
+        (function () {
+            'use strict'
+
+
+            var forms = document.querySelectorAll('.needs-validation')
+
+
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+
+
+
+</body>
+
+</html>
